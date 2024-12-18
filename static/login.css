@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Jacquard+24&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Charis SIL";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('image.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 600px;
+    background: transparent;
+    color: white;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative; /* Ensure proper positioning for the icon */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: peachpuff;
+    font-size: medium;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 20px 20px 20px 20px; /* Adjust padding to prevent overlap */
+}
+
+.input-box input::placeholder {
+    color: black;
+    font-size: medium;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: medium;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    margin: -15px 0 15px;
+    color: white;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    font-size: medium;
+    color: white;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Talks Registrations</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .techtalk {
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .techtalk:hover {
+        transform: translateY(-5px);
+    }
+    .techtalk h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    .techtalk p {
+        color: #666;
+    }
+    .register-btn {
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #4CAF50, #00BCD4);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .register-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    .register-btn:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Tech Talks</h1>
+
+    <div class="techtalk">
+        <h2>pravalikaboddupally</h2>
+        <p>Description: Data Privacy and Security </p>
+        <p>Date: 2024-08-04</p> <!-- Corrected date format -->
+        <p>Last Date to Enroll: 2024-07-07</p> <!-- Corrected date format -->
+        <p>Venue: Stanley College of Engineering</p> <!-- Corrected venue name capitalization -->
+        <p>Contacts: 5248818848</p>
+        <button class="register-btn" onclick="openForm()">Register</button>
+    
+    <div class="hackathon">
+        <h2>pravalikaboddupally</h2>
+        <p>Description: tech talk on Cyber security</p>
+        <p>Date: 2024-03-25</p>
+        <p>Last Date to Enroll: 2024-04-06</p>
+        <p>Venue: stanley college of engineering,a block</p>
+        <p>Contacts: 8309084764</p>
+        <button class="register-btn" onclick="openForm()">Register</button>
+    
+    <div class="hackathon">
+        <h2>jella navya</h2>
+        <p>Description: tech talk on AI</p>
+        <p>Date: 2024-07-10</p>
+        <p>Last Date to Enroll: 2024-07-26</p>
+        <p>Venue: stanley college of engineering</p>
+        <p>Contacts: 8309084764</p>
+        <button class="register-btn" onclick="openForm()">Register</button>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+function openForm() {
+    var formUrl = "https://forms.gle/fMjiLnTNoSsmCgBs6";
+    window.open(formUrl, "_blank");
+}
+</script>
+
+</body>
+</html>

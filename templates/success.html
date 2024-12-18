@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Enrollment Sheet</title>
+    <link rel="stylesheet" href="static/styled.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Enrollment Sheet</h1>
+        <form action="{{ url_for('success') }}" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="lastDate">Last Date to Enroll:</label>
+            <input type="date" id="lastDate" name="lastDate" required>  
+    
+            <label for="eventtype">Event type:</label>
+            <input type="text" id="eventtype" name="eventtype" required>
+
+
+            <label for="eventDetails">Event Details:</label>
+            <textarea id="eventDetails" name="eventDetails" required></textarea>
+
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue" name="venue" required>
+
+            <label for="contacts">Contacts:</label>
+            <input type="text" id="contacts" name="contacts" required>
+
+            <button type="submit">Submit To Principal</button>
+        </form>
+    </div>
+    <script src="static/src.js"></script>
+</body>
+</html>
